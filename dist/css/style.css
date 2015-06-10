@@ -1,0 +1,85 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+ 
+ body {
+            font-family: 'Arvo', serif;
+        }
+        .pas1 {
+            background: #ffccff;
+        }
+
+        /* obraz ma wysokość: 100px */
+        /* navbar ma wysokość: 150px */
+		/* navbar kolor */
+
+
+        a.navbar-brand {
+		font-family: 'Shadows Into Light', cursive;
+		font-size: 60px;
+        }
+
+
+        .navbar {
+            box-shadow: none;
+      font-size: 30px;
+		font-family: 'Shadows Into Light', cursive;
+        }
+
+        .navbar {
+            background-image: none;
+        }
+
+		.fa fa-birthday-cake{
+		position: relative;
+		}
+		
+        .pas1 {
+            background: #ffccff;
+        }
+
+        .pas2 {
+            background: #FCDDFA;
+        }
+
+        .pas3 {
+            background: #ffccff;
+        }
+
+        .pas4 {
+            background: #FCDDFA;
+        }
+        footer.footer {
+            background: #F2CEF0;
+        }
+
+        body {
+            background: #F2CEF0;
+        }
+		
+		img{
+		height: 120px;
+		float:left; 
+		margin:6px;
+		}
+		
+		h1{
+		font-size: 25px;
+		font-style: bold;
+		font-style: italic;
+		
+		}
+		
+		p{
+		font-style: italic;
+		}
+		
+		.big{
+		height: 250px;
+		float:left; 
+		margin:15px;
+		}
+		
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+		width: 70%;
+		margin: auto;
+		}
