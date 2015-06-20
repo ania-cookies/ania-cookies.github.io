@@ -16,6 +16,16 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
         <link rel="Stylesheet" type="text/css" href="dist/css/style.css" />
+        <script src="dist/js/jquery-1.4.min.js"></script>
+        <script src="dist/js/jquery.known.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $(function () {
+                    $('.test-known-plugin').known();
+                    $('.test-copy-unknown').copyUnknownWords('.test-known-plugin', '.test-destination');
+                });
+            });
+        </script>
 
     </head>
 
@@ -55,16 +65,17 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Fraisier - francuski torcik z truskawkami</h1>
-                        <p><img class="big" src="dist/img/Fraisier_2.jpg">Składniki na biszkopt migdałowy:</br>
-                        <ul>
-                            <li> 3 duże jajka</li>
+                        <p><img class="big" src="dist/img/Fraisier_2.jpg">Składniki na biszkopt migdałowy:</br></p>
+
+                        <ul class="test-known-plugin">
+                            <li> 3 duże <span>jajka</span></li>
                             <li> 1,5 łyżki letniej wody</li>
-                            <li> 2/3 szklanki drobnego cukru do wypieków</li>
-                            <li>  3/4 szklanki mąki pszennej np. tortowej</li>
-                            <li>  3/4 szklanki zmielonych migdałów</li>
-                            <li>  1/2 łyżeczki proszku do pieczenia</li>
+                            <li> 2/3 szklanki drobnego <span>cukru do wypieków</span></li>
+                            <li>  3/4 szklanki<span> mąki pszennej</span> np. tortowej</li>
+                            <li>  3/4 szklanki zmielonych <span>migdałów</span></li>
+                            <li>  1/2 łyżeczki <span>proszku do pieczenia</span></li>
                         </ul>
-                        </p>
+
                         <p>
                             Wszystkie składniki powinny być w temperaturze pokojowej.
 
@@ -75,19 +86,22 @@
                             Masę przelać do formy o średnicy 23 cm wysmarowanej masłem i wyłożonej papierem do pieczenia (tylko dno), wyrównać szpatułką.
 
                             Piec w temperaturze 170ºC przez około 23 minuty lub do tzw. suchego patyczka. Biszkopt powinien być ładnie zarumieniony i sprężysty przy dotyku. Wyjąć, wystudzić. Wystudzony przekroić na 2 blaty.
+
+                            Waniliowy krem bawarski z likierem pomarańczowym:
                         </p>
-                        <p>Waniliowy krem bawarski z likierem pomarańczowym:
-                        <ul>
+                        <div class="test-known-plugin">
+                            <ul>
 
-                            <li> 5 żółtek</li>
-                            <li> pół szklanki drobnego cukru do </li>
-                            <li>   130 ml mleka</li>
-                            <li>  1 łyżeczka pasty z wanilii</li>
-                            <li>   4 łyżeczki (16 g) żelatyny w proszku lub 4 listki żelatyny</li>
-                            <li>   500 ml śmietany kremówki 30% lub 36%, schłodzonej</li>
-                            <li>   2 łyżki likieru pomarańczowego np. Grand Marnier</li>
+                                <li> 5 <span>żółtek</span></li>
+                                <li> pół szklanki drobnego <span>cukru</span> do </li>
+                                <li>   130 ml <span>mleka</span></li>
+                                <li>  1 łyżeczka <span>pasty z wanilii</span></li>
+                                <li>   4 łyżeczki (16 g) <span>żelatyny w proszku</span> lub 4 listki żelatyny</li>
+                                <li>   500 ml <span>śmietany kremówki 30% lub 36%</span>, schłodzonej</li>
+                                <li>   2 łyżki<span> likieru pomarańczowego</span> np. Grand Marnier</li>
 
-                        </ul></p>
+                            </ul>
+                        </div>
                         <p>Żelatynę w proszku zalać małą ilością wody, tylko do jej przykrycia, odstawić na 10 minut do napęcznienia. Postawić na palniku i podgrzewać, mieszając, do całkowitego rozpuszczenia się żelatyny lub podgrzać w mikrofali. Nie doprowadzać do wrzenia (żelatyna straci swoje właściwości żelujące). Zdjąć z palnika. 
 
                             Do garnuszka przelać mleko, zagotować.
@@ -107,7 +121,16 @@
             </div>
         </div>
 
-
+        <div class="pas5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="test-copy-unknown" href="#">Stwórz listę zakupów</a>
+                        <div class="test-destination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
