@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html id="top">
 
     <head>
         <title>Ciasteczka</title>
@@ -14,9 +14,32 @@
         <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
         <!-- FontAwesome -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dist/js/jquery-scrollto.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <link rel="Stylesheet" type="text/css" href="dist/css/style.css" />
+ <script src="dist/js/jquery-1.4.min.js"></script>
+        <script src="dist/js/jquery.known.js"></script>
+        <script>
+            jQuery(document).ready(function ($) {
+                $(function () {
+                    $('.test-known-plugin').known();
+                    $('.test-copy-unknown').copyUnknownWords('.test-known-plugin', '.test-destination');
+                });
+            });
+			</script>
+			      <script>
+    $(function(){
 
+        $('a[href="#top"]').click(function(event){
+            $('body').ScrollTo({
+                duration: 2000
+            });
+        });
+
+    });
+    </script>
+		
     </head>
 
     <body>
@@ -60,19 +83,19 @@
                             Składniki na około 50 sztuk:
                         </p>
 
-                        <ul>
-                            <li> 500 g truskawek (świeżych lub zamrożonych)</li>
-                            <li>2 łyżki świeżo wyciśniętego soku z cytryny</li>
-                            <li>pół szklanki cukru (lub mniej, wg uznania)</li>
+                        <ul class="test-known-plugin">
+                            <li> 500 g <span>truskawek</span> (świeżych lub zamrożonych)</li>
+                            <li>2 łyżki świeżo wyciśniętego soku z <span>cytryny</span></li>
+                            <li>pół szklanki <span>cukru </span>(lub mniej, wg uznania)</li>
                             <li>pół szklanki gorącej wody</li>
-                            <li>25 g żelatyny</li>
+                            <li>25 g <span>żelatyny</span></li>
                         </ul>
 
                         <p>
                             Do obtoczenia:
                         </p>
-                        <ul>
-                            <li>drobny cukier do wypieków lub wiórki kokosowe</li>
+                        <ul class="test-known-plugin">
+                            <li>drobny cukier do wypieków lub <span> wiórki kokosowe</span></li>
                         </ul>
                         <p>
                             Truskawki zmiksować z sokiem z cytryny na puree, np. blenderem. Przelać do garnuszka, dodać cukier (ilość według smaku), zagotować, mieszając, do rozpuszczenia się cukru. Zdjąć z palnika.
@@ -104,13 +127,13 @@
                         <a name="etykieta">  <h1>Truskawkowe trifle</h1></a>
                         <p><img class="big" src="dist/img/Truskawkowe_trifle_1.jpg">Składniki na 4 - 6 porcji:<br/></p>
 
-                        <ul>      
-                            <li> ok. 400 g truskawek</li>
-                            <li>biszkopty lub domowe ciasto biszkoptowe (pokrojone na kawałki)</li>
-                            <li>   budyń waniliowy (Wasz ulubiony lub z przepisu poniżej)</li>
-                            <li>   1 galaretka truskawkowa </li>
+                        <ul class="test-known-plugin">      
+                            <li> ok. 400 g<span>  truskawek</span></li>
+                            <li><span> biszkopty </span>lub domowe ciasto biszkoptowe (pokrojone na kawałki)</li>
+                            <li>   <span> budyń waniliowy</span> (Wasz ulubiony lub z przepisu poniżej)</li>
+                            <li>   1<span>  galaretka truskawkowa</span> </li>
                             <li>   nasączenie, do wyboru: sherry brandy, calvados, limoncello, galaretka truskawkowa, kompot truskawkowo - rabarbarowy itp.</li>
-                            <li>   300 - 400 ml śmietany kremówki 30% lub 36%, schłodzonej + 1 łyżka cukru pudru</li>
+                            <li>   300 - 400 ml<span>  śmietany kremówki 30%</span> lub 36%, schłodzonej + 1 łyżka cukru pudru</li>
                         </ul>
 
                         <p>
@@ -122,12 +145,12 @@
                             Krem budyniowy:<br/>
                         </p>
 
-                        <ul>
-                            <li>6 żółtek</li>
-                            <li>100 g drobnego cukru do wypieków</li>
-                            <li>30 g mąki pszennej</li>
-                            <li>450 ml mleka</li>
-                            <li>1 łyżeczka pasty z wanilii lub nasionka z 1 laski wanilii</li>
+                        <ul class="test-known-plugin">
+                            <li>6 <span> żółtek</span></li>
+                            <li>100 g <span> drobnego cukru </span>do wypieków</li>
+                            <li>30 g <span> mąki pszennej</span></li>
+                            <li>450 ml <span> mleka</span></li>
+                            <li>1 łyżeczka<span>  pasty z wanilii</span>lub nasionka z 1 laski wanilii</li>
                         </ul>
 
                         <p>
@@ -137,11 +160,29 @@
 
                             Uwaga: do tego deseru bardziej pasuje budyń rzadszy niż gęsty, można więc dodać 1 żółtko mniej (jeśli taki lubicie).
                         </p>
+						
                     </div>
                 </div>
             </div>
         </div>
 
+		 <div class="pas5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+					<a href="#top" class="btn btn-primary btn-lg" role="button"" style="float: right; background-color: #F2CEF0;">
+        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+		
+                        <a class="test-copy-unknown" href="#">Stwórz listę zakupów</a>
+                        <div class="test-destination"></div
+						
+                    </div>
+					
+                </div>
+            </div>
+        </div>
+
+		
         <footer class="footer">
             <div class="container">
                 <p class="text-muted">Autor: Anna Mazur</p>

@@ -14,7 +14,9 @@
         <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
         <!-- FontAwesome -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dist/js/jquery-scrollto.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <link rel="Stylesheet" type="text/css" href="dist/css/style.css" />
         <script src="dist/js/jquery-1.4.min.js"></script>
         <script src="dist/js/jquery.known.js"></script>
@@ -26,7 +28,17 @@
                 });
             });
         </script>
+ <script>
+    $(function(){
 
+        $('a[href="#top"]').click(function(event){
+            $('body').ScrollTo({
+                duration: 2000
+            });
+        });
+
+    });
+    </script>
     </head>
 
     <body>
@@ -125,6 +137,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+					<a href="#top" class="btn btn-primary btn-lg" role="button"" style="float: right; background-color: #F2CEF0;">
+        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
                         <a class="test-copy-unknown" href="#">Stwórz listę zakupów</a>
                         <div class="test-destination"></div>
                     </div>

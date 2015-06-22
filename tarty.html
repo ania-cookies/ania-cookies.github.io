@@ -14,9 +14,31 @@
         <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
         <!-- FontAwesome -->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="dist/js/jquery-scrollto.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <link rel="Stylesheet" type="text/css" href="dist/css/style.css" />
+		<script src="dist/js/jquery-1.4.min.js"></script>
+        <script src="dist/js/jquery.known.js"></script>
+ <script>
+            jQuery(document).ready(function ($) {
+                $(function () {
+                    $('.test-known-plugin').known();
+                    $('.test-copy-unknown').copyUnknownWords('.test-known-plugin', '.test-destination');
+                });
+            });
+        </script>
+		 <script>
+    $(function(){
 
+        $('a[href="#top"]').click(function(event){
+            $('body').ScrollTo({
+                duration: 2000
+            });
+        });
+
+    });
+    </script>
     </head>
 
     <body>
@@ -56,13 +78,13 @@
                     <div class="col-md-12">
                         <h1>Tarta z truskawkami</h1>
                         <p><img class="big" src="dist/img/tarta_z_truskawkami_1.jpg"> Składniki na kruchy spód:</br></p>
-                        <ul>
+                        <ul class="test-known-plugin">
 
-                            <li> 250 g mąki pszennej</li>
-                            <li> 125 g masła, schłodzonego</li>
-                            <li> 25 g smalcu, schłodzonego</li>
-                            <li> 1 jajko</li>
-                            <li> 3 łyżki cukru pudru</li>
+                            <li> 250 g<span> mąki pszennej</span></li>
+                            <li> 125 g<span>masła</span>, schłodzonego</li>
+                            <li> 25 g <span>smalcu</span>, schłodzonego</li>
+                            <li> 1 <span>jajko</span></li>
+                            <li> 3 łyżki <span>cukru pudru</span></li>
                         </ul>
 
                         <p>
@@ -73,14 +95,14 @@
                             Wyjąć z piekarnika, wystudzić.  </br></br>
                             Budyń miętowy:
                         </p>
-                        <ul>
+                        <ul class="test-known-plugin">
 
-                            <li>    600 ml mleka</li>
-                            <li>6 żółtek</li>
-                            <li>100 g cukru </li>
-                            <li>40 g mąki pszennej</li>
-                            <li>40 g mąki ziemniaczanej</li>
-                            <li>100 g świeżej mięty (listki i gałązki)</li>
+                            <li>600 ml <span>mleka</span></li>
+                            <li>6<span> żółtek</span></li>
+                            <li>100 g <span>cukru </span></li>
+                            <li>40 g<span> mąki pszennej</span></li>
+                            <li>40 g <span>mąki ziemniaczanej</span></li>
+                            <li>100 g <span>świeżej mięty</span>(listki i gałązki)</li>
 
                         </ul>
 
@@ -101,6 +123,18 @@
             </div>
         </div>
 
+ <div class="pas5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+					<a href="#top" class="btn btn-primary btn-lg" role="button"" style="float: right; background-color: #F2CEF0;">
+        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                        <a class="test-copy-unknown" href="#">Stwórz listę zakupów</a>
+                        <div class="test-destination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 

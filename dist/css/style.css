@@ -91,6 +91,7 @@ p{
     width: 30%;
     margin: 0 auto;
     height: 30%;
+
 }
 
 
@@ -118,6 +119,8 @@ span {
     background: pink;
 }
 .test-destination {
-    background: #ff9999;
+
     min-height: 100px;
 }
+
+
